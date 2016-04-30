@@ -1,0 +1,25 @@
+#loq{
+    position: absolute;
+    width: 70%;
+    top: 0;
+    left: 15%;
+    z-index: 900000;
+    max-height: 100%;
+    overflow-y: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#loq>ul{
+    background-color: transparent;
+    color: rgba(0,0,0,1.0);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    list-style: none;
+    padding: 0.0em;
+    margin: 0;
+    max-height: 100%;
+    overflow-y: auto;
+}

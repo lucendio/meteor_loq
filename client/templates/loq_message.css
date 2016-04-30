@@ -1,0 +1,112 @@
+
+
+#loq>ul>li{
+    padding: 0.4em 0.2em;
+    border-right: 0.8em transparent solid;
+    border-left: 0.8em transparent solid;
+    cursor: pointer;
+    /*opacity: 0.8;*/
+    background-color: rgba(230,230,230,0.8);
+}
+
+#loq>ul>li:not(:last-of-type){
+    /*border-bottom: 0.3em rgba(255,255,255,0.0) solid;*/
+    margin-bottom: 0.3em;
+}
+
+#loq>ul>li span{
+    padding: 0.25em 0.25em 0.01em;
+}
+
+#loq>ul>li .loq--level{
+    text-transform: uppercase;
+    border-radius: 0.25em;
+    margin-right: 1.0em;
+    display: inline-block;
+    width: 4em;
+    text-align: center;
+}
+
+#loq>ul>li .loq--origin{
+    font-style: italic;
+    padding-left: 0.5em
+}
+
+
+/* smartphones (portrait and landscape) */
+@media only screen
+and (min-device-width : 0px)
+and (max-device-width : 480px) {
+    #loq>ul>li{
+        font-size: 0.9em;
+        line-height: 2.5em;
+    }
+
+    #loq>ul>li span{
+        padding: 0.13em 0.25em 0.07em;
+    }
+
+    #loq>ul>li:not(:last-of-type){
+        margin-bottom: 0.5em;
+    }
+
+    #loq>ul>li .loq--level{
+        width: 3em;
+        font-size: 2em;
+    }
+}
+
+/* high-res smartphones (portrait and landscape) */
+@media only screen
+and (min-device-width : 481px)
+and (max-device-width : 767px) {
+
+}
+
+/* tablets (portrait and landscape) */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+    #loq>ul>li{
+
+    }
+    #loq>ul>li span{
+        padding: 0.15em 0.25em 0.08em;
+    }
+    #loq>ul>li:not(:last-of-type){
+        margin-bottom: 0.25em;
+    }
+}
+
+/* desktop */
+@media only screen
+and (min-width : 1025px) {
+
+}
+
+
+#loq>ul>li .loq--level--,
+#loq>ul>li .loq--level--log{
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+#loq>ul>li .loq--level--info{
+    background-color: rgba(2, 84, 2, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+#loq>ul>li .loq--level--warn{
+    background-color: rgba(255, 170, 0, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+#loq>ul>li .loq--level--error{
+    background-color: rgba(177, 0, 6, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+#loq>ul>li .loq--level--debug{
+    background-color: rgba(17, 72, 132, 1);
+    color: rgba(255, 255, 255, 1);
+}

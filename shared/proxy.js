@@ -10,8 +10,10 @@ function proxy(){ return proxy; }
 
 Object.assign( proxy, objectifiedLevels, {
 
-    limit(){},
     if(){ return this; },
+
+    limit(){},
+    undo(){},
 
     flood(){},
     shut(){},
